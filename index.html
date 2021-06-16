@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do</title>
+    <link rel="stylesheet" href="/css/toDo.css" />
+    <script defer src="js/greeting.js"></script>
+    <script defer src="js/clock.js"></script>
+    <script defer src="js/quotes.js"></script>
+    <script defer src="js/weather.js"></script>
+    <script defer src="js/movie.js"></script>
+  </head>
+  <body>
+    <div id="weather"><span></span><span></span><span></span></div>
+    <h2 id="clock">00:00</h2>
+    <form id="login-form" class="hidden">
+      <input
+        required
+        type="text"
+        placeholder="What is your name?"
+        maxlength="15"
+      />
+      <input type="submit" value="Log In" />
+    </form>
+
+    <h1 id="greeting" class="hidden"></h1>
+    <span></span>
+    <span></span>
+  </body>
+</html>
