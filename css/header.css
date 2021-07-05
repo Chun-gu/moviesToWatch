@@ -1,0 +1,35 @@
+header {
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+header div {
+  width: 33%;
+}
+#weather span {
+  margin-right: 15px;
+}
+#weather span i {
+  margin-right: 5px;
+}
+.clock {
+  display: flex;
+  justify-content: center;
+}
+
+.name {
+  display: flex;
+  justify-content: flex-end;
+}
+#login-form input {
+  text-align: center;
+  border-bottom: 2px solid yellow;
+}
+#login-form input::placeholder {
+  text-align: center;
+}

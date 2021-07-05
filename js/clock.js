@@ -1,5 +1,5 @@
-const clock = document.getElementById("clock");
-function getClock() {
+const clock = document.getElementById("time");
+function getTIme() {
   const date = new Date();
   const hours = String(date.getHours()).padStart(2, "0");
   const mins = String(date.getMinutes()).padStart(2, "0");
@@ -7,5 +7,5 @@ function getClock() {
   clock.innerText = `${hours} : ${mins} : ${secs}`;
 }
 
-getClock();
-setInterval(getClock, 1000);
+getTIme();
+setInterval(getTIme, 1000);

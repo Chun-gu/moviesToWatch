@@ -4,29 +4,95 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>To-Do</title>
-    <link rel="stylesheet" href="/css/toDo.css" />
+    <title>MoviesToWatch</title>
+    <link rel="stylesheet" href="/moviesToWatch/css/reset.css" />
+    <link rel="stylesheet" href="/moviesToWatch/css/common.css" />
+    <link rel="stylesheet" href="/moviesToWatch/css/header.css" />
+    <link rel="stylesheet" href="/moviesToWatch/css/toDo.css" />
+    <link rel="stylesheet" href="/moviesToWatch/css/movie.css" />
+    <script
+      defer
+      src="https://kit.fontawesome.com/a2c6c797b0.js"
+      crossorigin="anonymous"
+    ></script>
     <script defer src="js/greeting.js"></script>
     <script defer src="js/clock.js"></script>
-    <script defer src="js/quotes.js"></script>
     <script defer src="js/weather.js"></script>
     <script defer src="js/movie.js"></script>
+    <script defer src="js/toDo.js"></script>
   </head>
   <body>
-    <div id="weather"><span></span><span></span><span></span></div>
-    <h2 id="clock">00:00</h2>
-    <form id="login-form" class="hidden">
-      <input
-        required
-        type="text"
-        placeholder="What is your name?"
-        maxlength="15"
-      />
-      <input type="submit" value="Log In" />
-    </form>
+    <div class="backGround">
+      <img class="backGround__image" />
+      <img class="backGround__cover" />
+    </div>
 
-    <h1 id="greeting" class="hidden"></h1>
-    <span></span>
-    <span></span>
+    <header>
+      <div id="weather">
+        <span></span><span></span><span></span><span></span>
+      </div>
+
+      <div class="clock"><h2 id="time"></h2></div>
+
+      <div class="name">
+        <form id="login-form" class="hidden">
+          <input
+            required
+            type="text"
+            placeholder="What is your name?"
+            maxlength="15"
+          />
+        </form>
+
+        <h1 id="helloMessage" class="hidden">
+          <span></span><button><i class="fas fa-sign-out-alt"></i></button>
+        </h1>
+      </div>
+    </header>
+
+    <div class="container">
+      <h1>Have you seen this movie?</h1>
+      <section class="movie">
+        <div class="movie__poster">
+          <img class="movie__poster__image" />
+        </div>
+        <div class="movie__detail">
+          <div class="movie__detail__title"></div>
+          <div class="movie__detail__genres"></div>
+          <div class="movie__detail__rating"></div>
+          <p class="movie__detail__overview"></p>
+          <div class="movie__detail__buttons">
+            <button id="addMovie" class="movie__detail__button">
+              <i class="fas fa-plus"></i>Wishlist!
+            </button>
+            <button id="loadAnother" class="movie__detail__button">
+              <i class="fas fa-redo-alt"></i>Another!
+            </button>
+            <button id="officialSite" class="movie__detail__button">
+              <a target="_blank"> <i class="fas fa-home"></i>Official Site </a>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="toDo">
+        <form id="toDo-form">
+          <input
+            type="text"
+            placeholder="Something to do?"
+            maxlength="35"
+            required
+          />
+        </form>
+        <div class="task-list">
+          <ul id="pending-list">
+            <span>Pending</span>
+          </ul>
+          <ul id="finished-list">
+            <span>Finished</span>
+          </ul>
+        </div>
+      </section>
+    </div>
   </body>
 </html>

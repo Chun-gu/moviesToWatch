@@ -1,3 +1,63 @@
 .hidden {
   display: none;
 }
+
+#toDo-form {
+  width: 100%;
+}
+#toDo-form > input {
+  width: 100%;
+  text-align: center;
+  line-height: 60px;
+  font-size: 60px;
+  margin: 20px 0;
+  padding: 20px;
+  border-bottom: 5px solid rgba(999, 999, 999, 0.3);
+}
+.toDo {
+  width: 100%;
+}
+.task-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px;
+}
+.task-list ul {
+  width: 49%;
+  text-align: center;
+}
+.task-list ul span {
+  display: block;
+  width: 100%;
+  font-size: 36px;
+  background-color: rgba(999, 999, 999, 0.1);
+  line-height: 200%;
+  border-bottom: 5px solid white;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+.task-list ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: start;
+  padding: 15px 0;
+  font-size: 24px;
+  border-bottom: 2px solid rgba(999, 999, 999, 0.2);
+}
+.task-list ul li:last-child {
+  border: none;
+}
+.task-list ul li p {
+  word-wrap: normal;
+}
+.task-list ul li div {
+  display: flex;
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+.task-list ul li div button i {
+  font-size: 16px;
+}

@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+  color: white;
+}
+a {
+  text-decoration: none;
+}
+button {
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+input {
+  border: none;
+  color: white;
+  background-color: transparent;
+}
+input:focus{
+  outline: transparent;
+}
+input::placeholder {
+  color: white;
+}
+body{
+  display: flex;
+  justify-content: center;
+}
